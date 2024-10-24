@@ -16,18 +16,18 @@ int main(int argc, const char * argv[])
     scanf("%49s", name);
 
     NSLog(@"Please enter your age: ");
-    scanf("%d", &age);
+    scanf("%i", &age);
 
     NSString *nameString = [NSString stringWithUTF8String:name];
 
-    NSLog(@"Hello, %@! You are %d years old.", nameString, age);
+    NSLog(@"Hello, %@! You are %i years old.", nameString, age);
 
     if (age < 18) 
     {
-        NSLog(@"You're still a minor. Enjoy your youth!");
+        NSLog(@"You're still young. Enjoy your youth!");
     } else if (age >= 18 && age < 65) 
     {
-        NSLog(@"You're an adult. Time to adult!");
+        NSLog(@"You getting old");
     } 
     else 
     {
