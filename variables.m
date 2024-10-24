@@ -1,4 +1,4 @@
-/*Print data types and also does type-casting in objective c the Automatic way*/
+
 #import <Foundation/Foundation.h>
 
 int main (int argc, const char * argv[])

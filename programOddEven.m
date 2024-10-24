@@ -13,7 +13,7 @@ int main (int argc, const char * argv[])
     for(int i = 1; i <= 10; i++) 
     {
         int coolNumber = i * 7;
-        NSLog(@"Cool number %d: %d", i, coolNumber);
+        NSLog(@"Cool number %i: %i", i, coolNumber);
             
         if (coolNumber % 2 == 0) 
         {

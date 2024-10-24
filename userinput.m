@@ -6,13 +6,23 @@ int main (int argc, const char * argv[])
     // protects you from memory to run the program
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 
-    NSString *name;     // String object
+    int age;
+    char namee[50];
 
+    // user input name
     NSLog(@" Whats your name? ");
-    scanf(@"%@", name);
+    scanf("%49s", namee);
+    NSLog(@" Whats up %s", namee);
+
+    NSLog(@"\n");
+
+    NSString *nameString = [NSString stringWithUTF8String:namee];
+    // user age
+    NSLog(@" Whats your age? ");
+    scanf("%i", &age);
+    NSLog(@"Hello, %@! You are %i years old.", nameString, age);
 
 
-    NSLog(@" Whats up %@", name);
     
     // collects all the memory you use and throws it away to free up memory for the next program
     [pool drain];

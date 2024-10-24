@@ -2,7 +2,7 @@
 
 int main(int argc, const char * argv[]) 
 {
-     // protects you from memory to run the program
+    // protects you from memory to run the program
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     
    
